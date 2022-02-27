@@ -1,0 +1,4 @@
+.vs
+TodoApi/bin/
+TodoApi/obj/
+*.user
