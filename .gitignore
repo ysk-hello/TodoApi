@@ -1,4 +1,6 @@
 .vs
 TodoApi/bin/
 TodoApi/obj/
+TodoApiClient/bin/
+TodoApiClient/obj/
 *.user
