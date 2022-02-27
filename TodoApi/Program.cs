@@ -13,9 +13,10 @@ builder.WebHost.ConfigureKestrel(options =>
 
 builder.Services.AddControllers();
 
-// Add DbContex
+// Add DbContext
 builder.Services.AddDbContext<TodoContext>(opt =>
-    opt.UseInMemoryDatabase("TodoList"));
+    //opt.UseInMemoryDatabase("TodoList"));
+    opt.UseNpgsql("Host=192.168.11.14;Database=todo;Username=postgres;Password=postgres"));
 
 var app = builder.Build();
 
